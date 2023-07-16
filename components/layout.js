@@ -8,7 +8,7 @@ const name = 'Your Name';
 export const siteTitle = 'Next.js Sample Website';
 
 const prod = process.env.NODE_ENV === 'production';
-const repoName = prod ? '/wadaitwt' : '';
+const repoName = prod ? '/tutorial' : '';
 console.log({ prod: process.env.NODE_ENV });
 
 export default function Layout({ children, home }) {
