@@ -1,10 +1,13 @@
-// next.config.js
 /** @type {import('next').NextConfig} */
+
+const dev = process.env.NODE_ENV === 'development';
+const repoName = '/wadaitwt';
+
 const nextConfig = {
 	reactStrictMode: true,
 
-	basePath: process.env.NODE_ENV === 'development' ? undefined : '/subDirectory', // Sub directory
-	assetPrefix: process.env.NODE_ENV === 'development' ? undefined : '/Nginx/', // Nginx
+	basePath: dev ? undefined : repoName,
+	assetPrefix: dev ? undefined : repoName,
 };
 
 module.exports = nextConfig;
