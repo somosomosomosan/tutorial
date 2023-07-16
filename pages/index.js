@@ -11,7 +11,7 @@ export default function Home() {
 				<title>{siteTitle}</title>
 			</Head>
 			<h1 className={styles.title}>
-				Read <Link href='/posts/first-post'>this page!!</Link>
+				Read <Link href='/posts/first-post'>this page!!!!!!</Link>
 			</h1>
 			<section className={utilStyles.headingMd}>
 				<p>[Your Self Introduction]</p>
